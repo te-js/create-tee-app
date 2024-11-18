@@ -12,7 +12,7 @@ import {
   route,
   pre,
   code,
-} from "core";
+} from "@marcomit/core";
 
 class HomePage extends Stateful {
   #counter = 0;

@@ -3,11 +3,14 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run index.ts",
-    "vite": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

@@ -1,18 +1,33 @@
 {
   "name": "create-tee-app",
-  "module": "index.ts",
+  "version": "1.1.1",
+  "description": "CLI tool to create Tee framework applications",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/prompts": "^2.4.9"
+  "bin": {
+    "create-tee-app": "./dist/index.js"
   },
-  "scripts": {
-    "dev": "bun run index.ts"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "files": [
+    "index.ts",
+    "template"
+  ],
+  "keywords": [
+    "tee",
+    "framework",
+    "create-app",
+    "cli"
+  ],
   "dependencies": {
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/te-js/create-tee-app"
   }
 }

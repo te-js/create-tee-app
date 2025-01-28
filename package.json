@@ -7,7 +7,7 @@
     "create-tee-app": "./dist/index.js"
   },
   "files": [
-    "index.ts",
+    "index.js",
     "template"
   ],
   "keywords": [

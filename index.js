@@ -4,6 +4,8 @@ import fs from "fs";
 import path from "path";
 import prompts from "prompts";
 
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
 async function main() {
   const args = process.argv.slice(2);
   console.log(args);
@@ -32,7 +34,7 @@ async function main() {
   // console.log(`Project created in ${currentPath}`);
 }
 
-async function install(currentPath: string) {
+async function install(currentPath) {
   const { choice } = await prompts({
     type: "toggle",
     name: "choice",
@@ -54,7 +56,7 @@ async function install(currentPath: string) {
   exec(command, currentPath);
 }
 
-function exec(command: string, currentPath: string) {
+function exec(command, currentPath) {
   execSync(command, { cwd: currentPath, stdio: "inherit" });
 }
 

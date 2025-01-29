@@ -1,10 +1,10 @@
 {
   "name": "create-tee-app",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "CLI tool to create Tee framework applications",
   "type": "module",
   "bin": {
-    "create-tee-app": "./dist/index.js"
+    "create-tee-app": "./index.js"
   },
   "files": [
     "index.js",
@@ -17,6 +17,7 @@
     "cli"
   ],
   "dependencies": {
+    "@marcomit/core": "^0.1.2",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
